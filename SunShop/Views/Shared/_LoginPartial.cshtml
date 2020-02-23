@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<div class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <a class="nav-item nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Account Page"><i class="fas fa-user"></i></a>
+        <a class="nav-item nav-link" title="Cart" asp-area="" asp-controller="Cart" asp-action="Cart"><i class="fas fa-shopping-cart"></i></a>
+        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button type="submit" class="nav-item nav-link btn btn-link">Logout</button>
+        </form>
+    }
+    else
+    {
+        <a class="nav-item nav-link" title="Account Menu" asp-area="" asp-controller="Account" asp-action="AccountMenu"><i class="fas fa-user"></i></a>
+        <a class="nav-item nav-link" title="Cart" asp-area="" asp-controller="Cart" asp-action="Cart"><i class="fas fa-shopping-cart"></i></a>
+    }
+</div>
+

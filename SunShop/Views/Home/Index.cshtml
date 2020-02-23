@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="homepage-images" class="row">
+    <div class="column image-hover">
+        <img src="~/images/homepage/girl-sunglasses.jpg" alt="">
+        <a id="image-btn-one" class="btn image-btn btn-light btn-lg text-black" href="#" role="button">go to sale</a>
+    </div>
+    <div class="column image-hover">
+        <img src="~/images/homepage/group-sunglasses.jpg" alt="">
+        <a id="image-btn-two" class="btn image-btn btn-light btn-lg text-black" href="#" role="button">find inspiration</a>
+    </div>
+</div>
+
+<div id="first-jumbotron" class="jumbotron jumbotron-fluid text-center">
+    <div class="container-fluid">
+        <h1 class="display-4">New Summer Vibes</h1>
+        <div>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <a class="btn btn-light btn-lg btn-block" asp-controller="Product" asp-action="Store" role="button">products</a>
+        </div>
+    </div>
+</div>

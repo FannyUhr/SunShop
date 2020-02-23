@@ -1,0 +1,127 @@
+﻿body, html {
+    overflow-x: hidden;
+}
+
+#navbar-options a {
+    margin: 0 1rem;
+}
+
+#first-jumbotron {
+    font-variant: small-caps;
+}
+
+
+
+.image-hover {
+    flex: 50%;
+    position: relative;
+}
+
+.image-hover img {
+    width: 100%;
+    flex: 50%;
+}
+
+.image-hover:hover {
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.image-btn {
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.411);
+    font-size: 17px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-variant: small-caps;
+}
+
+
+#image-btn-one {
+    left: 70%;
+}
+
+#image-btn-two {
+    left: 30%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#register-container {
+    margin-top: 1rem;
+}
+
+#login-container {
+    margin-top: 3rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem 5rem;
+}
+
+.product-cards {
+    margin: 2rem;
+}
+
+.product-cards:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.item1 {
+    grid-area: Name;
+    padding-left: 2rem;
+}
+
+.item2 {
+    grid-area: ArticleNumber;
+    padding-left: 2rem;
+    color: gray;
+    font-weight: 100;
+}
+
+.item3 {
+    grid-area: Price;
+    padding-left: 2rem;
+    color: grey;
+}
+
+.item4 {
+    grid-area: Favorites;
+    justify-self: right;
+    align-self: center;
+    color: #6c757d;
+}
+
+.item5 {
+    grid-area: Cart;
+    justify-self: left;
+    align-self: center;
+    color: #343a40;
+}
+
+.product-icon {
+    font-size: 150%;
+    color: #6c757d;
+}
+
+.product-icon:hover {
+    color: #343a40;
+}
+
+.product-info {
+    display: grid;
+    grid-template-areas: 'Name Name Name Name Name Name' 'ArticleNumber ArticleNumber ArticleNumber ArticleNumber ArticleNumber ArticleNumber' 'Price Price Favorites Favorites Favorites Cart';
+}
+
+

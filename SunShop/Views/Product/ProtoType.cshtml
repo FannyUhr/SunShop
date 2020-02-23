@@ -1,0 +1,12 @@
+﻿@model SunShop.Models.Product
+
+    <div>
+        <img src="~/images/@Model.Photo" width="100%" height="90%" />
+        <div class="product-info">
+            <h5 class="item1"><b>@Model.ProductName</b></h5>
+            <h6 class="item2">@Model.ArticleNumber</h6>
+            <h3 class="item3 price">$@Model.Price</h3>
+            <a class="item4 btn"><i class="product-icon fas fa-heart"></i></a>
+            <a class="item5 btn" role="button"><i class="product-icon fas fa-shopping-cart"></i></a>
+        </div>
+    </div>

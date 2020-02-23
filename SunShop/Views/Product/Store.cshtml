@@ -1,0 +1,12 @@
+﻿@model List<SunShop.Models.Product>
+
+<div class="cards">
+    @foreach (var product in Model)
+    {
+        <div class="product-cards">
+            @Html.Partial("ProtoType", product)
+        </div>
+    }
+</div>
+
+
